@@ -2,12 +2,12 @@ name: GitHub Actions Validator
 run-name: ${{ github.actor }} esta validando este código através do github actions 🚀
 on: push
 jobs:
-  Validando este repositório:
+  Validando-este-repositório:
     runs-on: ubuntu-latest
     steps:
         - name: Iniciando testes
           run: echo"testes Iniciados"
-          
+
         - name: Baixar código
           uses: actions/checkout@v4
 
