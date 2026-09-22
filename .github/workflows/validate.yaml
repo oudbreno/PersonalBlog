@@ -3,15 +3,17 @@ run-name: ${{ github.actor }} esta validando este código através do github act
 on: push
 jobs:
   Validando este repositório:
-    runs-on: ubunto-latest
+    runs-on: ubuntu-latest
     steps:
-        -name: Baixar código
-        run: echo "Primeiro Baixa o código"
-        uses: actions/checkout@v4
+        - name: Iniciando testes
+          run: echo"testes Iniciados"
+          
+        - name: Baixar código
+          uses: actions/checkout@v4
 
-        -name: instalando Node
-        run: echo"Baixando Node"
+        - name: instalando Node
+          run: echo"Baixando Node"
 
-        -name: Verificando Arquivos
-        run: ls -n
+        - name: Verificando Arquivos
+          run: ls -n
 
