@@ -1,0 +1,17 @@
+name: GitHub Actions Validator
+run-name: ${{ github.actor }} esta validando este código através do github actions 🚀
+on: push
+jobs:
+  Validando este repositório:
+    runs-on: ubunto-latest
+    steps:
+        -name: Baixar código
+        run: echo "Primeiro Baixa o código"
+        uses: actions/checkout@v4
+
+        -name: instalando Node
+        run: echo"Baixando Node"
+
+        -name: Verificando Arquivos
+        run: ls -n
+
