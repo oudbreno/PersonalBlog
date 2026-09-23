@@ -6,13 +6,13 @@ jobs:
     runs-on: ubuntu-latest
     steps:
         - name: Iniciando testes
-          run: echo"testes Iniciados"
+          run: echo "testes Iniciados"
 
         - name: Baixar código
           uses: actions/checkout@v4
 
         - name: instalando Node
-          run: echo"Baixando Node"
+          run: echo "Baixando Node"
 
         - name: Verificando Arquivos
           run: ls -n
