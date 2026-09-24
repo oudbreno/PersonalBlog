@@ -2,18 +2,28 @@ name: GitHub Actions Validator
 run-name: ${{ github.actor }} esta validando este código através do github actions 🚀
 on: push
 jobs:
-  Validando-este-repositorio:
+  Hello-Windows:
+    runs-on: windows-latest
+    steps:
+      - name: Testando Windows
+        run: echo "Hello Windows"
+  Hello-Linux:
     runs-on: ubuntu-latest
     steps:
-        - name: Iniciando testes
-          run: echo "testes Iniciados"
+      - name: Testando Linux
+        run: echo "Hello Linux"
 
-        - name: Baixar código
-          uses: actions/checkout@v4
+#  Validando-este-repositorio:
+#  steps:
+#      - name: Iniciando testes
+#       run: echo "testes Iniciados"
 
-        - name: instalando Node
-          run: echo "Baixando Node"
+#        - name: Baixar código
+#         uses: actions/checkout@v4
+#
+#       - name: instalando Node
+#        run: echo "Baixando Node"
 
-        - name: Verificando Arquivos
-          run: ls -n
+#     - name: Verificando Arquivos
+#      run: ls -n
 
